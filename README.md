@@ -1,7 +1,7 @@
 wi-watch.py
 -----------
 
-Minimal script to reconnect wireless interface in if connection is lost.
+Minimal script to reconnect wireless interface if connection is lost.
 
 Uses iwlib (pip install iwlib) to poll an interface, if the connection has been
 lost it sets the ssid again.

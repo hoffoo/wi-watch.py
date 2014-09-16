@@ -25,8 +25,9 @@ def poll():
     config = iwlib.get_iwconfig(device)
     if config["Access Point"] == "00:00:00:00:00:00":
         # connection lost, set ssid again and hope for the best
-        iwlib.iwconfig.set_ssid(device, ssid)
+        print("kicking")
+        iwlib.iwconfig.set_essid(device, ssid)
 
 while True:
     poll()
-    time.sleep(20)
+    time.sleep(5)
